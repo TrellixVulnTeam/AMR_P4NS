@@ -1,0 +1,7 @@
+message: "If you use this piece of software, please consider citing it as below."
+authors:
+  - family-names: Rocchi
+    given-names: Ettore
+    orcid: "https://orcid.org/0000-0002-7612-2819"
+title: "An Extra Modality for Metagenomic Simulation using CAMISIM"
+url: "https://github.com/Ettore1024/Metagenomic_known_distribution"

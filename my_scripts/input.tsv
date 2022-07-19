@@ -1,0 +1,4 @@
+Genome_ID	Species_Name	Abundance	PATRIC_ID	Antibiotic	Phenotype	Genome_length	Novelty_category	Genome_file
+E.coli	Escherichia Coli	0.5	562	Bla1	yes	12	known_strain	GCA_000008865.2_ASM886v2_genomic.fna
+S.Aureus	Staphylococcus Aureus	0.3	1280	Bla2	no	56	known_strain	GCF_000013425.1_ASM1342v1_genomic.fna
+S.pneumoniae	Streptococcus pneumoniae	0.2	1313	Bla3	no	45	known_strain	GCF_002076835.1_ASM207683v1_genomic.fna
