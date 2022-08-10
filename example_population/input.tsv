@@ -1,0 +1,5 @@
+Genome_ID	Species_Name	Abundance	PATRIC_ID	Antibiotic	Phenotype	Genome_length	Novelty_category	Genome_file
+Genome1.0	Acinetobacter baumannii A078	0.25	470.2431	carbapenem	resistant	3884708	known_strain	470_2431.fna
+Genome2.0	Streptococcus pneumoniae strain SCAID PHRX1-2019	0.25	1313.34903	carbapenem	susceptible	1963680	known_strain	strepto_pneumo_SCAID_PHRX12019.fasta
+Genome3.0	Staphylococcus haemolyticus strain SCAID PHRX1-2019	0.25	1283.799	carbapenem	susceptible	2119443	known_strain	staphy_haemo_SACID_PHRX12019.fasta
+Genome4.0	Yersinia kristensenii strain ATCC BAA-2637	0.25	28152.31	carbapenem	susceptible	4448883	known_strain	yarsinia_krisst_ATTC_BAA2637.fasta

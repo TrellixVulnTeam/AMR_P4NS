@@ -1,0 +1,12 @@
+{
+	"simulation_directory": "GLOBAL/PATH/TO_THE_CLONED_DIRECTORY/AMR/population_14",
+	"seed": "1",
+	"max_processor": "8",
+	"output_directory": "example_population/camisim_out",
+	"size": "1",
+	"fragm_size_mean": "270",
+	"fragm_size_std_dev": "27",
+	"number_of_samples": "1",
+	"equally_distributed_strains": "True",
+	"genomes_total": "36"
+}
