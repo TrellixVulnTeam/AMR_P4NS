@@ -91,20 +91,23 @@ rule kmer_count:
 		S1 = "{sample}/reads_1.fastq",
 		S2 = "{sample}/reads_2.fastq"
 	output:
-		"{sample}/kmc_out/kmer_count_1.txt",
-		"{sample}/kmc_out/kmer_count_2.txt"
+		"{sample}/kmc_out/kmer_count_1.txt.gz",
+		"{sample}/kmc_out/kmer_count_2.txt.gz"
 	conda: "env.yaml"
-	threads: 4
+	threads: 20
 	params:
 		ram = 10
 	shell:
 		"""
-		mkdir -p {wildcards.sample}/kmc_out
-		mkdir -p {wildcards.sample}/kmc_out/kmc_temp
+		rm -r {wildcards.sample}/kmc_out
+		mkdir {wildcards.sample}/kmc_out
+		mkdir {wildcards.sample}/kmc_out/kmc_temp
 		kmc -k{k_mer_size} -m{params.ram} -t{threads} {input.S1} {wildcards.sample}/kmc_out/k_1 {wildcards.sample}/kmc_out/kmc_temp
 		kmc_tools transform {wildcards.sample}/kmc_out/k_1 dump {wildcards.sample}/kmc_out/kmer_count_1.txt
+		gzip {wildcards.sample}/kmc_out/kmer_count_1.txt
 		kmc -k{k_mer_size} -m{params.ram} -t{threads} {input.S2} {wildcards.sample}/kmc_out/k_2 {wildcards.sample}/kmc_out/kmc_temp
 		kmc_tools transform {wildcards.sample}/kmc_out/k_2 dump {wildcards.sample}/kmc_out/kmer_count_2.txt
+		gzip {wildcards.sample}/kmc_out/kmer_count_2.txt
 		"""
 
 

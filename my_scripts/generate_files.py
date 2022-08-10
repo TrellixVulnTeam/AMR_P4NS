@@ -100,15 +100,15 @@ def config_definition (configuration_file):
                  'temp_directory': '/tmp',
                  'gsa': 'False',
                  'pooled_gsa': 'False',
-                 'anonymous': 'False',
+                 'anonymous': 'True',
                  'compress': '1'
 
         }
 
 	configuration_file['ReadSimulator'] = {
-                 'readsim': 'tools/art_illumina-2.3.6/art_illumina',
-                 'error_profiles': 'tools/art_illumina-2.3.6/profiles',
-                 'samtools': 'tools/samtools-1.3/samtools',
+                 'readsim': 'CAMISIM/tools/art_illumina-2.3.6/art_illumina',
+                 'error_profiles': 'CAMISIM/tools/art_illumina-2.3.6/profiles',
+                 'samtools': 'CAMISIM/tools/samtools-1.3/samtools',
                  'profile': 'mbarc',
                  'size': '',
                  'type': 'art',
@@ -117,8 +117,8 @@ def config_definition (configuration_file):
         }
 
 	configuration_file['CommunityDesign'] = {
-                 'ncbi_taxdump': 'tools/ncbi-taxonomy_20170222.tar.gz',
-                 'strain_simulation_template': 'scripts/StrainSimulationWrapper/sgEvolver/simulation_dir',
+                 'ncbi_taxdump': 'CAMISIM/tools/ncbi-taxonomy_20170222.tar.gz',
+                 'strain_simulation_template': 'CAMISIM/scripts/StrainSimulationWrapper/sgEvolver/simulation_dir',
                  'number_of_samples': '',
 	}
 
